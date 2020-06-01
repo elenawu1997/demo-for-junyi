@@ -1,7 +1,7 @@
 # instructions:
 # please input: count(the number you want)
 #               ex: count(15)
-# and you can get 9 as an output
+#               and you can get 9 as an output
 
 def count(num):
     count=0
