@@ -1,7 +1,7 @@
 # instruction: 
 # please input: reverse("the sentence you want to reverse")
 #               ex: reverse("hello world")
-# and you can get "olleh dlrow" as an output
+#                   and you can get "olleh dlrow" as an output
 # note: this could work for both a single word and a sentence with spaces.
 
 
