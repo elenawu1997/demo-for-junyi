@@ -1,0 +1,33 @@
+# instruction: 
+# please input: reverse("the sentence you want to reverse")
+#               ex: reverse("hello world")
+# and you can get "olleh dlrow" as an output
+
+
+# split the sentence into words by space
+def reverse(sentence): 
+    wordlist=sentence.split(' ')
+    final=""
+    for i in range(len(wordlist)):
+        final+=prepare(wordlist[i],final)+' '
+    print(final)
+ 
+# transfer the sentence from string to list with chars (for reversing conveniently)
+def prepare(word,final):
+    n=len(word)
+    wordlist=[]
+
+    for i in range(n):
+        wordlist.append(word[i])
+    
+    return perm(wordlist,0,n,final)
+    
+# reverse each word 
+def perm(wordlist,i,n,final): # reverse each word 
+    for i in range(int(n/2)):
+        wordlist[i],wordlist[n-i-1]=wordlist[n-i-1],wordlist[i]
+        
+    ans=""
+    for j in range(n):
+        ans+=wordlist[j]
+    return ans
