@@ -1,0 +1,19 @@
+# instructions:
+# please input: count(the number you want)
+#               ex: count(15)
+# and you can get 9 as an output
+
+def count(num):
+    count=0
+    
+    for i in range(1,num+1):
+        judge=1
+        if (i%3==0):
+            judge=0
+        if (i%5==0):
+            judge=0
+        if (i%15==0):
+            judge=1
+        count+=judge
+    
+    print(count)
